@@ -4,7 +4,8 @@
   "description": "BackEnd_for_webtoon",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "node index.js",
+    "build": "npx sequelize db:migrate"
   },
   "author": "Yusril Izza",
   "license": "ISC",
@@ -16,6 +17,8 @@
     "express-jwt": "^5.3.1",
     "jsonwebtoken": "^8.5.1",
     "mysql2": "^1.7.0",
+    "pg": "^7.12.1",
+    "pg-hstore": "^2.3.3",
     "sequelize": "^5.19.6",
     "sequelize-cli": "^5.5.1"
   }
